@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>ميلا ماهر - Meila Maher</title>
+  <meta name="description" content="متجر إلكتروني متخصص في بيع العبايات، الطرح، النقاب، وملابس النساء والفتيات من عمر 2 إلى 80 سنة.">
+  <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;500;700&family=Segoe+UI&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- شريط التنقل -->
+  <header class="top-bar">
+    <div class="container">
+      <div class="logo">
+        <h1>ميلا ماهر - Meila Maher</h1>
+      </div>
+      
+      <button id="langToggle">EN</button>
+      
+      <nav class="main-nav">
+        <ul>
+          <li><a href="#" data-category="abayas" class="nav-link">العبايات</a></li>
+          <li><a href="#" data-category="hijabs" class="nav-link">الطرح</a></li>
+          <li><a href="#" data-category="niqabs" class="nav-link">النقاب</a></li>
+          <li><a href="#" data-category="kids" class="nav-link">أطفال (2-12)</a></li>
+          <li><a href="#" data-category="seniors" class="nav-link">كبار (50-80)</a></li>
+        </ul>
+      </nav>
+
+      <div class="search-cart">
+        <input type="text" id="searchInput" placeholder="ابحث عن منتج...">
+        <button id="cartBtn">🛒 (<span id="cartCount">0</span>)</button>
+      </div>
+    </div>
+  </header>
+
+  <!-- البانر -->
+  <section class="hero-banner">
+    <h2 id="welcomeText">أناقة إسلامية تليق بكِ 💕</h2>
+    <p id="heroSubtitle">من عمر سنتين إلى ثمانين سنة — نهتم بكل تفصيل في أناقتك</p>
+    <a href="#" class="btn-primary" id="shopNowBtn">تسوق الآن</a>
+  </section>
+
+  <!-- الأقسام -->
+  <section class="categories-section">
+    <div class="container">
+      <h2 id="categoriesTitle">أقسام المتجر</h2>
+      <div class="category-grid">
+        <a href="#" class="category-card" data-category="abayats">
+          <div>👗</div>
+          <span id="catAbayas">العبايات</span>
+        </a>
+        <a href="#" class="category-card" data-category="hijabs">
+          <div>🧣</div>
+          <span id="catHijabs">الطرح</span>
+        </a>
+        <a href="#" class="category-card" data-category="niqabs">
+          <div>幪</div>
+          <span id="catNiqabs">النقاب</span>
+        </a>
+        <a href="#" class="category-card" data-category="kids">
+          <div>👧</div>
+          <span id="catKids">أطفال</span>
+        </a>
+        <a href="#" class="category-card" data-category="seniors">
+          <div>👵</div>
+          <span id="catSeniors">كبار</span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- المنتجات -->
+  <section class="featured-products">
+    <div class="container">
+      <h2 id="productsTitle">أحدث المنتجات</h2>
+      <div id="productGrid" class="product-grid">
+        <!-- سيتم ملؤه بالجافاسكريبت -->
+      </div>
+    </div>
+  </section>
+
+  <!-- نافذة السلة -->
+  <div id="cartModal" class="modal">
+    <div class="modal-content">
+      <span class="close" id="closeCart">&times;</span>
+      <h3 id="cartTitle">سلة التسوق</h3>
+      <ul id="cartList"></ul>
+      <div class="cart-footer">
+        <p id="totalLabel">الإجمالي: <strong id="cartTotal">0 ج.م</strong></p>
+        <button id="whatsappOrderBtn" class="btn-whatsapp">إرسال الطلب عبر الواتساب</button>
+      </div>
+    </div>
+  </div>
+
+  <!-- الفوتر -->
+  <footer>
+    <div class="container">
+      <p>© 2026 متجر ميلا ماهر. جميع الحقوق محفوظة.</p>
+      <p id="developerCredit">تم تطوير الموقع بواسطة شركة <strong>Ment-M</strong><br/> بقيادة المهندس <strong>محمد عيد صبحي عيد مرشدي</strong></p>
+      <p>للتواصل: <a href="tel:+201011097388">+201011097388</a></p>
+    </div>
+  </footer>
+
+  <script src="products.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
